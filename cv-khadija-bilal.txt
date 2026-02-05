@@ -1,0 +1,128 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                    KHADIJA BILAL
+        Web Developer & Cybersecurity Enthusiast
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CONTACT INFORMATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📧 Email     : khadija.bilal9167@example.com
+📱 Phone     : +92 300 1234567
+📍 Location  : Lahore, Pakistan
+💼 LinkedIn  : linkedin.com/in/khadijabilal
+🔗 GitHub    : github.com/Khadija-Bilal244
+
+
+PROFESSIONAL SUMMARY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Passionate web developer with expertise in creating responsive 
+and user-friendly websites. Strong foundation in cybersecurity 
+with hands-on experience in modern web technologies. Dedicated 
+to building innovative solutions that combine creative design 
+with robust security practices.
+
+
+EDUCATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Bachelor of Science in Computer Science
+FAST NUCES | 2023 - 2027
+• Focused on software engineering and cybersecurity
+• Strong academic performance
+• Active participation in tech communities
+• Hands-on experience with modern web technologies
+
+Intermediate (Pre-Engineering)
+Punjab Group Of Colleges | 2021 - 2023
+• Completed with distinction
+• Strong foundation in mathematics and computer science
+
+Matriculation
+Divisional Public School | 2019 - 2021
+• Excellent grades in science subjects
+• Developed strong analytical and problem-solving skills
+
+
+TECHNICAL SKILLS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Frontend Development:
+• HTML5 (90%) - Semantic markup and accessibility
+• CSS3 (85%) - Responsive design and animations
+• JavaScript (75%) - DOM manipulation and ES6+
+• React (70%) - Component-based development
+
+Backend & Database:
+• Python (80%) - Scripting and automation
+• SQL (75%) - Database design and queries
+
+Tools & Technologies:
+• Git & GitHub - Version control
+• VS Code - Development environment
+• Flexbox & Grid - Modern CSS layouts
+• Responsive Design - Mobile-first approach
+
+Security:
+• Network Security fundamentals
+• Vulnerability Assessment
+• Secure coding practices
+
+
+PROJECTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. E-Commerce Platform
+   Technologies: HTML, CSS, JavaScript
+   • Built responsive online store with shopping cart
+   • Implemented user authentication system
+   • Integrated payment gateway functionality
+   • Created dynamic product filtering and search
+   
+2. Security Scanner Tool
+   Technologies: Python, Networking
+   • Developed Python-based vulnerability scanner
+   • Identifies common web application security issues
+   • Generates comprehensive security reports
+   • Automated testing for XSS and SQL injection
+
+3. Personal Blog Website
+   Technologies: React, CSS, API Integration
+   • Modern blog platform with React
+   • Dynamic content loading and routing
+   • Responsive design for all devices
+   • Interactive user interface with smooth animations
+
+
+CERTIFICATIONS & COURSES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Web Development Fundamentals
+• Introduction to Cybersecurity
+• Responsive Web Design
+• Python Programming
+
+
+KEY STRENGTHS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✓ Clean Code - Writing maintainable and scalable solutions
+✓ Security First - Building applications with security in mind
+✓ Problem Solving - Analytical thinking and debugging skills
+✓ Continuous Learning - Staying updated with latest technologies
+✓ Team Collaboration - Working effectively in team environments
+✓ Attention to Detail - Creating pixel-perfect designs
+
+
+LANGUAGES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• English - Fluent
+• Urdu - Native
+
+
+INTERESTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Web Development & Design
+• Cybersecurity & Ethical Hacking
+• Open Source Contribution
+• Technology Blogs & Articles
+• UI/UX Design Trends
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              Available for opportunities
+           Let's build something amazing together!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
