@@ -82,11 +82,11 @@ body {
 
 /* ========== LIGHT THEME ========== */
 .theme-checkbox:checked ~ .main-wrapper {
-    --bg-color: #D9D931;
-    --second-bg-color: #e8e84a;
+    --bg-color: #FFE0BD;
+    --second-bg-color: #ffefd5;
     --text-color: #1a1a1a;
-    --card-bg: #f0f0f0;
-    background-color: #D9D931;
+    --card-bg: #fff5e6;
+    background-color: #FFE0BD;
     color: #1a1a1a;
 }
 
@@ -101,24 +101,24 @@ body {
 }
 
 .theme-checkbox:checked ~ .main-wrapper header {
-    background-color: #D9D931;
+    background-color: #FFE0BD;
     color: #1a1a1a;
 }
 
 /* Update body background when theme changes */
 .theme-checkbox:checked ~ body {
-    background-color: #D9D931;
+    background-color: #FFE0BD;
     color: #1a1a1a;
 }
 
 /* ensure footer and all elements get light colors */
 .theme-checkbox:checked ~ footer {
-    background-color: #D9D931;
+    background-color: #FFE0BD;
     color: #1a1a1a;
 }
 
 .theme-checkbox:checked ~ footer * {
-    background-color: #D9D931;
+    background-color: #FFE0BD;
     color: #1a1a1a;
 }
 
