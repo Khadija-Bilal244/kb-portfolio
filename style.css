@@ -82,41 +82,44 @@ body {
 
 /* ========== LIGHT THEME ========== */
 .theme-checkbox:checked ~ .main-wrapper {
-    --bg-color: #f5f5f5;
-    --second-bg-color: #ffffff;
+    --bg-color: #D9D931;
+    --second-bg-color: #e8e84a;
     --text-color: #1a1a1a;
-    --main-color: #3a4fa0;
-    --shadow-color: rgba(58, 79, 160, 0.2);
-    --card-bg: #ffffff;
+    --card-bg: #f0f0f0;
+    background-color: #D9D931;
+    color: #1a1a1a;
 }
 
 .theme-checkbox:checked ~ .theme-toggle .fa-moon {
-    opacity: 0;
-    transform: scale(0) rotate(-180deg);
+    display: inline-block;
+    opacity: 1;
 }
 
 .theme-checkbox:checked ~ .theme-toggle .fa-sun {
-    opacity: 1;
-    transform: scale(1) rotate(0deg);
+    display: none;
+    opacity: 0;
 }
 
 .theme-checkbox:checked ~ .main-wrapper header {
-    background: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #D9D931;
+    color: #1a1a1a;
 }
 
 /* Update body background when theme changes */
 .theme-checkbox:checked ~ body {
-    background-color: #f5f5f5;
+    background-color: #D9D931;
+    color: #1a1a1a;
 }
 
-/* replace the incorrect body rule so elements outside .main-wrapper also get light colors */
-.theme-checkbox:checked ~ .main-wrapper,
-.theme-checkbox:checked ~ footer,
-.theme-checkbox:checked ~ .main-wrapper *,
+/* ensure footer and all elements get light colors */
+.theme-checkbox:checked ~ footer {
+    background-color: #D9D931;
+    color: #1a1a1a;
+}
+
 .theme-checkbox:checked ~ footer * {
-    background-color: #f5f5f5 !important;
-    color: #1a1a1a !important;
+    background-color: #D9D931;
+    color: #1a1a1a;
 }
 
 /* ========== HEADER ========== */
