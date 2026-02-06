@@ -1007,8 +1007,6 @@ footer {
     position: relative;
     color: var(--main-color); /* ensure visible */
 }
-
-/* remove animations that change content; keep cursor only */
 .typing-text span::after{
     content: "";
     background-color: transparent;
@@ -1055,4 +1053,47 @@ footer {
     .home-content h1 { font-size: 3.5rem; }
     .typing-text { font-size: 2.5rem; }
     .section-title { font-size: 3rem; }
+
+    /* ensure timeline becomes single-column and content is readable */
+    .timeline {
+        padding-left: 1.2rem;
+    }
+    .timeline::before {
+        left: 1.2rem; /* keep the vertical line visible near the left edge */
+    }
+
+    .timeline-item {
+        width: 100%;
+        margin: 1.6rem 0;
+        padding: 0;
+        left: 0 !important;
+    }
+
+    /* remove left/right alternation and make content use remaining width */
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        transform: none;
+    }
+
+    .timeline-content {
+        position: relative;
+        margin-left: 3.2rem; /* space for the dot + line */
+        width: calc(100% - 3.6rem);
+        padding: 1.2rem;
+        box-sizing: border-box;
+    }
+
+    .timeline-dot {
+        left: 0.6rem;
+        top: 1.2rem;
+        transform: translate(0, 0);
+    }
+
+    .timeline-content h3,
+    .timeline-content p,
+    .institution,
+    .duration {
+        font-size: 1.4rem; /* scale text for small screens */
+        line-height: 1.4;
+    }
 }
