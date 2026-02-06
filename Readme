@@ -1,30 +1,42 @@
 # Khadija Bilal - Portfolio Website
 
-## Project Overview
-A professional portfolio website showcasing my skills, education, projects, and contact information. Built with pure HTML, CSS, and JavaScript.
+## Project Overview  
+A professional portfolio website showcasing my skills, education, projects, and contact information. Built using pure HTML, CSS, and JavaScript without external frameworks.
 
-## Features
-✅ Responsive design for all devices
-✅ Dark/Light mode toggle (Bonus)
-✅ Downloadable CV (Bonus)
-✅ Smooth animations (Bonus)
-✅ Functional contact form (Bonus)
-✅ Clean and professional layout
-✅ Flexbox-based design
-✅ Consistent color scheme and typography
+## Features  
+- ✅ Fully responsive design for all screen sizes  
+- ✅ Dark/Light mode toggle (Bonus)  
+- ✅ Downloadable CV/Resume (Bonus)  
+- ✅ Smooth animations and transitions (Bonus)  
+- ✅ Functional contact form (Bonus)  
+- ✅ Clean and professional layout  
+- ✅ Flexbox and Grid for layouts  
+- ✅ Consistent color scheme and typography  
 
-## Technologies Used
-- HTML5
-- CSS3 (Flexbox, Grid, Custom Properties)
-- JavaScript (ES6)
-- Font Awesome Icons
-- Google Fonts (Poppins)
+## Technologies Used  
+- HTML5  
+- CSS3 (Flexbox, Grid, Custom Properties)  
+- Vanilla JavaScript (ES6)  
+- Font Awesome Icons  
+- Google Fonts (Poppins)  
 
-## Live Demo
-[View Live Website](https://khadija-bilal-portfolio.vercel.app)
+## Live Demo  
+You can view the live website here:  
+[Khadija Bilal Portfolio](https://khadija-bilal-portfolio.vercel.app)
 
-## Installation
-1. Clone the repository:
+## Installation  
+To set up this project locally:  
+
+1. **Clone the repository:**  
 ```bash
+git clone https://github.com/Khadija-Bilal244/kb-portfolio.git
+```
 
-git https://github.com/Khadija-Bilal244/kb-portfolio.git
+2. Navigate to the project directory:  
+```bash
+cd kb-portfolio
+```
+
+3. Open the `index.html` file in your browser, or use a local server for the best experience.  
+
+That's it! No build process or dependencies are required since it's built with pure HTML, CSS, and JavaScript.
