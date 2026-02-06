@@ -1,4 +1,4 @@
-Name: Khadija Bilal      Roll no: 23L-3054    Web-Programming (A)
+# Name: Khadija Bilal      Roll no: 23L-3054    Web-Programming (A)
 # Khadija Bilal - Portfolio Website
 
 ## Project Overview  
@@ -41,6 +41,7 @@ cd kb-portfolio
 3. Open the `index.html` file in your browser, or use a local server for the best experience.  
 
 That's it! No build process or dependencies are required since it's built with pure HTML, CSS, and JavaScript little bit to enhances user experience.
+
 
 
 
