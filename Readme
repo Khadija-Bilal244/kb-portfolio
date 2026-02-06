@@ -23,7 +23,7 @@ A professional portfolio website showcasing my skills, education, projects, and 
 
 ## Live Demo  
 You can view the live website here:  
-[Khadija Bilal Portfolio](https://kb-portfolio-one.vercel.app/)
+[Khadija Bilal Portfolio](https://kb-portfolio-khadija-bilal244s-projects.vercel.app/)
 
 ## Installation  
 To set up this project locally:  
@@ -41,6 +41,7 @@ cd kb-portfolio
 3. Open the `index.html` file in your browser, or use a local server for the best experience.  
 
 That's it! No build process or dependencies are required since it's built with pure HTML, CSS, and JavaScript little bit to enhances user experience.
+
 
 
 
