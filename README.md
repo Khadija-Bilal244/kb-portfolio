@@ -43,14 +43,14 @@ No React, no Tailwind, no bundler. Just semantic HTML, custom CSS (Grid + Flexbo
 
 `HTML5` · `CSS3 (Grid/Flexbox, custom properties)` · `Vanilla JavaScript` · `Google Fonts`
 
-## 🚀 Running locally
+##  Running locally
 
 No install, no dependencies:
 
 ```bash
 git clone https://github.com/Khadija-Bilal244/<repo-name>.git
 cd <repo-name>
-open portfolio.html   # or just double-click it
+open index.html
 ```
 
 That's it — it's a static file, so any local server (or none at all) works fine.
