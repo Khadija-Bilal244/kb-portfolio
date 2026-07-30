@@ -63,10 +63,10 @@ Currently deployed on **Vercel**: any push to `main` redeploys automatically.
 
 - **Portfolio:** [kb-portfolio-pearl.vercel.app](https://kb-portfolio-pearl.vercel.app/)
 - **GitHub:** [@Khadija-Bilal244](https://github.com/Khadija-Bilal244)
-- **LinkedIn:** linked from the site's Contact section
+- **LinkedIn:**[khadija-bilal-496b97370](https://www.linkedin.com/in/khadija-bilal-496b97370/))
 
 ---
 
 <div align="center">
-<sub>Designed & built by Khadija Bilal — CS student, FAST-NUCES Lahore.</sub>
+<h3>Designed & built by Khadija Bilal — CS student, FAST-NUCES Lahore.</h3>
 </div>
