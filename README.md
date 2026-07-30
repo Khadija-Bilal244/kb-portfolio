@@ -61,7 +61,8 @@ Currently deployed on **Vercel**: any push to `main` redeploys automatically.
 
 ## 📬 Contact
 
-- **Portfolio:** [kb-portfolio-khadija-bilal244s-projects.vercel.app](https://kb-portfolio-khadija-bilal244s-projects.vercel.app)
+- **Portfolio:**  https://kb-portfolio-pearl.vercel.app/
+- Domain: [kb-portfolio-khadija-bilal244s-projects.vercel.app](https://kb-portfolio-khadija-bilal244s-projects.vercel.app)
 - **GitHub:** [@Khadija-Bilal244](https://github.com/Khadija-Bilal244)
 - **LinkedIn:** linked from the site's Contact section
 
