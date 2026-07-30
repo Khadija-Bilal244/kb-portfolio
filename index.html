@@ -120,7 +120,7 @@ h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;color:var(--white);font-weigh
 
 header.nav{
   position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:100;
-  width:calc(100% - 40px);max-width:920px;border-radius:999px;
+  width:calc(100% - 40px);max-width:1040px;border-radius:999px;overflow:hidden;
   background:rgba(16,23,40,0.62);
   backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
   border:1px solid rgba(255,255,255,0.1);
@@ -128,12 +128,12 @@ header.nav{
   transition:background .35s ease, box-shadow .35s ease, top .3s ease, max-width .3s ease, border-color .3s ease;
 }
 header.nav.scrolled{
-  top:10px;max-width:840px;
+  top:10px;max-width:960px;
   background:rgba(16,23,40,0.85);
   border-color:rgba(255,255,255,0.14);
   box-shadow:0 20px 50px -20px rgba(0,0,0,0.75);
 }
-.nav-inner{margin:0 auto;padding:0 8px 0 20px;height:58px;display:flex;align-items:center;justify-content:space-between;gap:10px;}
+.nav-inner{margin:0 auto;padding:0 14px 0 22px;height:58px;display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:nowrap;}
 .nav-mark{
   font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14.5px;color:var(--white);
   display:flex;align-items:center;gap:8px;flex-shrink:0;
@@ -154,18 +154,18 @@ nav.links{display:flex;gap:2px;position:relative;}
 }
 nav.links a{
   font-family:'JetBrains Mono',monospace;font-size:12.5px;letter-spacing:0.04em;
-  padding:9px 15px;color:var(--slate);border-radius:999px;transition:color .2s ease;
-  position:relative;z-index:1;
+  padding:9px 13px;color:var(--slate);border-radius:999px;transition:color .2s ease;
+  position:relative;z-index:1;white-space:nowrap;
 }
 nav.links a:hover{color:var(--white);}
 nav.links a.active{color:var(--teal);}
 .nav-cta{
   font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--ink);background:var(--teal);
   padding:9px 18px;border-radius:999px;font-weight:600;letter-spacing:0.02em;flex-shrink:0;
-  transition:background .2s, transform .2s;
+  white-space:nowrap;transition:background .2s, transform .2s;
 }
 .nav-cta:hover{background:var(--amber);transform:translateY(-1px);}
-.burger{display:none;flex-direction:column;gap:4px;background:none;border:none;cursor:pointer;padding:8px;border-radius:50%;transition:background .2s ease;}
+.burger{display:none;flex-direction:column;align-items:center;justify-content:center;gap:4px;width:44px;height:44px;background:none;border:none;cursor:pointer;padding:0;border-radius:50%;transition:background .2s ease;flex-shrink:0;}
 .burger:hover{background:rgba(255,255,255,0.08);}
 .burger span{width:20px;height:2px;background:var(--white);display:block;transition:transform .25s ease, opacity .25s ease;}
 .burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg);}
@@ -697,6 +697,11 @@ footer{border-top:1px solid var(--line);padding:32px 0;position:relative;z-index
 .back-to-top:hover{border-color:var(--teal);color:var(--amber);transform:translateY(-3px);}
 
 /* ---------- RESPONSIVE ---------- */
+@media (max-width:1180px){
+  nav.links{display:none;}
+  .burger{display:flex;}
+  .nav-cta{display:none;}
+}
 @media (max-width:980px){
   .hero-grid{grid-template-columns:1fr;}
   .badge-card{max-width:440px;}
@@ -709,9 +714,6 @@ footer{border-top:1px solid var(--line);padding:32px 0;position:relative;z-index
   .stats-grid{grid-template-columns:repeat(4,1fr);gap:16px;}
 }
 @media (max-width:720px){
-  nav.links{display:none;}
-  .burger{display:flex;}
-  .nav-cta{display:none;}
   .hero{padding:120px 0 60px;}
   section{padding:64px 0;}
   .stack-grid{grid-template-columns:1fr;}
@@ -719,9 +721,20 @@ footer{border-top:1px solid var(--line);padding:32px 0;position:relative;z-index
   .stats-grid{grid-template-columns:repeat(2,1fr);gap:28px 16px;}
   .stats-strip{padding:36px 0;}
 }
-@media (max-width:720px){
+@media (max-width:480px){
+  header.nav{top:10px;width:calc(100% - 24px);}
+  .nav-inner{padding:0 8px 0 16px;}
+  .nav-mark{font-size:12.5px;}
+  .nav-mark .dot{width:6px;height:6px;}
+  .hero{padding:110px 0 50px;}
+  .hero-actions{flex-direction:column;align-items:stretch;}
+  .hero-actions .btn{justify-content:center;}
+  .badge-fields{grid-template-columns:1fr;}
+  .stats-grid{grid-template-columns:1fr 1fr;gap:24px 14px;}
+}
+@media (max-width:1180px){
   nav.links.mobile-open{
-    display:flex;flex-direction:column;position:fixed;top:82px;left:20px;right:20px;
+    display:flex;flex-direction:column;position:fixed;top:82px;left:20px;right:20px;z-index:150;
     background:rgba(16,23,40,0.95);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
     border:1px solid rgba(255,255,255,0.12);border-radius:20px;
     box-shadow:0 20px 45px -18px rgba(0,0,0,0.7);
@@ -1377,16 +1390,34 @@ footer{border-top:1px solid var(--line);padding:32px 0;position:relative;z-index
   // mobile nav toggle
   const burger = document.getElementById('burgerBtn');
   const navLinks = document.getElementById('navLinks');
-  burger.addEventListener('click', () => {
-    const open = navLinks.classList.toggle('mobile-open');
-    burger.classList.toggle('open', open);
-    burger.setAttribute('aria-expanded', open);
-  });
-  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  const navLinksHome = navLinks.parentNode;      // original home: .nav-inner
+  const navLinksAnchor = navLinks.nextElementSibling; // .nav-cta, used to restore original position
+
+  function openMobileMenu(){
+    // header.nav has transform + overflow:hidden, which traps/clips any
+    // position:fixed descendant inside its small pill box. Move the menu
+    // to <body> while open so it renders at the viewport level instead.
+    document.body.appendChild(navLinks);
+    navLinks.classList.add('mobile-open');
+    burger.classList.add('open');
+    burger.setAttribute('aria-expanded', 'true');
+  }
+  function closeMobileMenu(){
     navLinks.classList.remove('mobile-open');
     burger.classList.remove('open');
     burger.setAttribute('aria-expanded', 'false');
-  }));
+    if(navLinks.parentNode !== navLinksHome){
+      navLinksHome.insertBefore(navLinks, navLinksAnchor);
+    }
+  }
+  burger.addEventListener('click', () => {
+    if(navLinks.classList.contains('mobile-open')) closeMobileMenu();
+    else openMobileMenu();
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMobileMenu));
+  window.addEventListener('resize', () => {
+    if(window.innerWidth > 1180 && navLinks.classList.contains('mobile-open')) closeMobileMenu();
+  });
 
   // lightbox for certificate
   const certFrame = document.getElementById('certFrame');
@@ -1503,19 +1534,33 @@ footer{border-top:1px solid var(--line);padding:32px 0;position:relative;z-index
   document.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  // badge card: subtle pointer-follow tilt
+  // badge card: subtle pointer-follow tilt (mouse)
   const badgeCard = document.getElementById('badgeCard');
-  if(badgeCard && !reduceMotion && window.matchMedia('(hover: hover)').matches){
-    badgeCard.addEventListener('mousemove', (e) => {
+  if(badgeCard && !reduceMotion){
+    const tiltFromPoint = (x, y) => {
       const r = badgeCard.getBoundingClientRect();
-      const px = (e.clientX - r.left) / r.width - 0.5;
-      const py = (e.clientY - r.top) / r.height - 0.5;
+      const px = (x - r.left) / r.width - 0.5;
+      const py = (y - r.top) / r.height - 0.5;
       badgeCard.style.transform = `rotateX(${(-py * 8).toFixed(2)}deg) rotateY(${(px * 10).toFixed(2)}deg) translateY(-4px)`;
-    });
-    badgeCard.addEventListener('mouseleave', () => {
-      badgeCard.style.transform = 'rotateX(0deg) rotateY(0deg) translateY(0)';
-    });
+    };
+    const resetTilt = () => { badgeCard.style.transform = 'rotateX(0deg) rotateY(0deg) translateY(0)'; };
+
+    if(window.matchMedia('(hover: hover)').matches){
+      badgeCard.addEventListener('mousemove', (e) => tiltFromPoint(e.clientX, e.clientY));
+      badgeCard.addEventListener('mouseleave', resetTilt);
+    }
+
+    // touch: tilt as a finger drags across the card, settle back on release
+    badgeCard.addEventListener('touchstart', (e) => {
+      tiltFromPoint(e.touches[0].clientX, e.touches[0].clientY);
+    }, { passive: true });
+    badgeCard.addEventListener('touchmove', (e) => {
+      tiltFromPoint(e.touches[0].clientX, e.touches[0].clientY);
+    }, { passive: true });
+    badgeCard.addEventListener('touchend', resetTilt);
+    badgeCard.addEventListener('touchcancel', resetTilt);
   }
+
 </script>
 
 </body>
